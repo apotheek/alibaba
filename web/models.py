@@ -114,7 +114,7 @@ class Passenger(models.Model):
 class Tiket(models.Model):
     Passenger=models.ForeignKey(Passenger,on_delete=models.CASCADE)
     TripId=models.ForeignKey(Trip,on_delete=models.CASCADE)
-    SateNumber=models.CharField(max_length=10,null=True,blank=True)
+    SeatNumber=models.CharField(max_length=10,null=True,blank=True)
     quantity=models.PositiveIntegerField()                                                                    #tedad blit
 
 
